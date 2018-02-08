@@ -13,8 +13,8 @@ export class AddlistComponent implements OnInit {
   addCourse = function(){
     if (this.newCourse.trim() != ''){
       this.coursesArr.push(this.newCourse);
-      this.newCourse='';
     }
+    this.newCourse='';
   }
 
   removeCourse = function(i){
