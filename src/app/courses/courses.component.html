@@ -7,7 +7,7 @@
       <button (click) = "addCourse()">Add</button>
   </div>
   <ul >
-    <li *ngFor = "let i of coursesArr; let ind = index">
+    <li *ngFor = "let i of coursesArr | sort:'dsc'; let ind = index">
       {{i}}
       <span (click) = "removeCourse(ind)">x</span>
     </li>

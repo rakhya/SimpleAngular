@@ -4,13 +4,14 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { AddlistComponent } from './addlist/addlist.component';
-
+import { CoursesComponent } from './courses/courses.component';
+import { SortPipe } from './pipes/sortPipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddlistComponent
+    CoursesComponent,
+    SortPipe
   ],
   imports: [
     BrowserModule,
@@ -18,7 +19,7 @@ import { AddlistComponent } from './addlist/addlist.component';
     RouterModule.forRoot([
       {
         path:'courses',
-        component:AddlistComponent
+        component:CoursesComponent
       }
   ])
   ],

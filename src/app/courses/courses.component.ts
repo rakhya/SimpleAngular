@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-addlist',
-  templateUrl: './addlist.component.html',
-  styleUrls: ['./addlist.component.css']
+  selector: 'app-courses',
+  templateUrl: './courses.component.html',
+  styleUrls: ['./courses.component.css']
 })
-export class AddlistComponent implements OnInit {
+export class CoursesComponent implements OnInit {
 
-  coursesArr = ['Telugu','Hindi','English'];
+  coursesArr = ['Telugu','Hindi','English','Maths'];
 
   newCourse = '';
   addCourse = function(){
