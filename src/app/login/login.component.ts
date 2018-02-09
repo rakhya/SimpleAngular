@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  langs = ["Angular","React","JQuery","Java","Python","C#"];
   constructor() { }
 
   ngOnInit() {

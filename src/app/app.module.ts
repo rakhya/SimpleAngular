@@ -12,8 +12,8 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     AppComponent,
     CoursesComponent,
-    SortPipe,
-    LoginComponent
+    LoginComponent,
+    SortPipe
   ],
   imports: [
     BrowserModule,

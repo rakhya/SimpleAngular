@@ -4,7 +4,8 @@
     <input type = "text" placeholder="Last Name" name="lastname">
     <br>
     <select name="languages">
-      <option *ngFor = 'let lang of langs' [value]='lang'>{{lang}}</option>
+        <option disabled selected value> -- select any language -- </option>
+      <option *ngFor="let lang of langs" value="lang">{{lang}}</option>
     </select>
     <br><br>
     <input type = "submit" value="Submit">
