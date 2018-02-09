@@ -6,12 +6,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { SortPipe } from './pipes/sortPipe';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
-    SortPipe
+    SortPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +22,10 @@ import { SortPipe } from './pipes/sortPipe';
       {
         path:'courses',
         component:CoursesComponent
+      },
+      {
+        path:'login',
+        component:LoginComponent
       }
   ])
   ],
